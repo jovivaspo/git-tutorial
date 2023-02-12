@@ -1,81 +1,87 @@
 # **Git**
 
-## **What's Git?**
+## **¿Qué es Git**
 
-"Git is a free and open source distributed version
-control system designed to handle everything
-from small to very large projects with speed and
-efficiency”. [Source](https://git-scm.com)
+Git es un sistema de control de versiones de código. Es una herramienta que permite a los desarrolladores mantener un registro de los cambios realizados en su código y colaborar de manera efectiva en proyectos de software.
 
-## **Why should we use it?**
+Por ejemplo, con Git, puedes crear un repositorio que contenga todo el historial de cambios en tu proyecto. Cada vez que realizas un cambio en el código, puedes "comitear" ese cambio al repositorio, lo que permite llevar un registro de ese cambio y revertir fácilmente a versiones previas si es necesario.
 
-- Change control
-- Easy to use
-- Most useful with text files
-- Feature management
-- Teamwork
-- No real server
-- Remote teams
-- Deployment in different environments
-- Modern and evolving!
+Además, Git permite trabajar de manera colaborativa en proyectos de software. Puedes clonar repositorios de otros desarrolladores, hacer tus propios cambios y enviarlos de vuelta al repositorio original como "pull request". Esto permite un flujo de trabajo colaborativo y eficiente para el desarrollo de software.
 
-## **Installation**
+> "Git is a free and open source distributed version
+> control system designed to handle everything
+> from small to very large projects with speed and
+> efficiency”. [Source](https://git-scm.com)
 
-- Links installation:
+Entre sus características podremos destacar:
+
+- Control de cambios
+- Fácil de usar
+- Más útil con archivos de texto
+- Gestión de funciones
+- Trabajo en equipo
+- No hay un servidor real
+- Equipos remotos
+- Implementación en diferentes entornos
+- ¡Moderno y en constante evolución!
+
+## **Instalación**
+
+- Enlaces:
   - [Window](https://git-scm.com/download/win)
   - [Mac](https://git-scm.com/download/mac)
   - [Linux](https://git-scm.com/download/linux)
-- Config:
-  - Define Visaul Studio Code as the default editor.
-  - Define the main branch as "main".
+- Configuración:
+  - Define Visaul Studio Code como editor por defecto.
+  - Define la rama principal como "main".
 
-## **Basics commands**
+## **Comandos básicos**
 
-### Configure git
+### Configurar git
 
-- **`git config --global user.name "[name]`**: set the name you want attached to your commit.
-- **`git config --global user.email "[email address]"`**: set the email you want attached to your commit.
+- **`git config --global user.name "[name]`**: establecer el nombre que quieres adjuntar en tus commit.
+- **`git config --global user.email "[email address]"`**: establecer el email que quieres adjuntar en tus commit.
 
-### Set up & init:
+### Iniciar:
 
-- **`git init [project-name]`**: start a repository.
-- **`git clone [url]`**: clone one repository.
+- **`git init [project-name]`**: iniciar un repositorio.
+- **`git clone [url]`**: clonar un repositorio.
 
 ### Stage & Snapshot:
 
-- **`git init`**: start a repository.
-- **`git status`**: check the repository, show modified files in working directory, staged for your next commit.
-- **`git add [file]`** or **`git add .`** : add a file or git all changed files.
-- **`git diff`**: diff of what is changed but not staged.
-- **`git commit -m [menssage]`**: commit the change and add a descriptive message.
+- **`git init`**: iniciar un repositorio.
+- **`git status`**: verificar el repositorio, muestra archivos modificados en el directorio de trabajo y listos para hacer commit.
+- **`git add [file]`** or **`git add .`** : agregar un archivo o todos los cambios.
+- **`git diff`**: diferencias de lo que ha cambiado pero no está en stage.
+- **`git commit -m [menssage]`**: hacer commit de los cambios y agregar un mensaje descriptivo.
 
 ### Branch & Merge:
 
-- **`git branch`**: list your branches, a \* appear next to the currently active branch.
-- **`git branch [branch-name]`**: create a new branch.
-- **`git checkout [branch-name]`**: select other brach.
-- **`git checkout -b [branch-2] [branch-1]`**: create a branch called branch-2 from branch-1.
-- **`git merge [branch]`**: merge the specified branch into the current one.
-- **`git log`**: show all commits in the current branch.
-- **`git log --oneline`**: show all commits in one line.
+- **`git branch`**: listar las ramas, una \* aparece junto a la rama activa actual..
+- **`git branch [branch-name]`**: crear una nueva rama.
+- **`git checkout [branch-name]`**: seleccionar una rama.
+- **`git checkout -b [branch-2] [branch-1]`**: crear una rama llamada branch-2 a partir de la rama branch-1.
+- **`git merge [branch]`**: fusionar la rama especificada en la rama actual.
+- **`git log`**: mostrar todos los commits en la rama actual.
+- **`git log --oneline`**: mostrar todos los commits en una sola línea.
 
 ### Share & update:
 
-- **`git remote add [url]`**: add a git url.
-- **`git push [branch]`**: send local branch commits to the remote repository branch.
-- **`git pull [branch]`**: fetch any commits from the remote branch.
+- **`git remote add [url]`**: añadir url git.
+- **`git push [branch]`**: enviar los commits de la rama local a la rama en el repositorio remoto.
+- **`git pull [branch]`**: obtener el último commit de la rama remota.
 
 ### Tracking path changes:
 
-- **`git rm [file]`**: delete the file from project.
-- **`git mv [existing-path] [new-path]`**: change the existing file path and stage the move.
+- **`git rm [file]`**: borrar el archivo del proyecto.
+- **`git mv [existing-path] [new-path]`**: cambiar la ruta del archivo existente y preparar el movimiento
 
 ### Rewrite history:
 
-- **`git rebase [branch]`**: apply any commits of current branch ahead of specified one.
-- **`git reset --hard [commit]`**: clear staging area, rewrite working tree from specified commit.
+- **`git rebase [branch]`**: aplicar cualquier confirmación del branch actual antes de la especificada.
+- **`git reset --hard [commit]`**: limpiar el área de preparación y reescribir el árbol de trabajo a partir del commit especificado.
 
-**Others resources**:
+**Más recursos**:
 
 - [Original documentation](https://git-scm.com/docs)
 - [Pro Git book](https://git-scm.com/book/en/v2)
@@ -122,3 +128,5 @@ In the Git flow workflow, there are five different branch types:
 3.  New feature branch -> branch [feature-name].
 4.  When the feature is finished, **merge with develop**.
 5.  All features are ready, **merge with main**, add a tag/release.
+
+En resumen, podríamos decir que Git es una herramienta esencial para cualquier desarrollador de software que desee llevar un control de versiones y colaborar de manera efectiva en proyectos de software.
