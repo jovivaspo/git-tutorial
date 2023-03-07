@@ -94,39 +94,39 @@ Entre sus características podremos destacar:
 
 ## **How to do good comments**
 
-There 7 basic rules:
+Hay 7 reglas básicas:
 
-1. Separate subject from body with a blank line.
-2. Limit the subject line to 50 characters.
-3. Capitalize the subject line.
-4. Do not end the subject line with a period.
-5. Use the imperative mood in the subject line.
-6. Wrap the body at 72 characters.
-7. Use the body to explain what and why vs. how.
+1. Separar el tema del cuerpo con una línea en blanco.
+2. Limitar la línea del tema a 50 caracteres.
+3. Capitalizar la línea del tema.
+4. No terminar la línea del tema con un punto.
+5. Usar el modo imperativo en la línea del tema.
+6. Envolver el cuerpo en 72 caracteres.
+7. Utilizar el cuerpo para explicar qué y por qué en lugar de cómo.
 
-![How to write a correct commit](https://cbea.ms/content/images/size/w2000/2021/01/git_commit_2x.png)
+![Cómo hacer un commit correctamente](https://cbea.ms/content/images/size/w2000/2021/01/git_commit_2x.png)
 
 [Source](https://chris.beams.io/posts/git-commit/)
 
 ## **Git-flow Workflow**:
+Git flow es una estrategia popular de ramificación de Git que tiene como objetivo simplificar la gestión de versiones y fue introducida por el desarrollador de software Vincent Driessen en 2010. Fundamentalmente, Git flow implica aislar tu trabajo en diferentes tipos de ramas de Git.
 
-Git flow is a popular Git branching strategy aimed at simplifying release management, and was introduced by software developer Vincent Driessen in 2010. Fundamentally, Git flow involves isolating your work into different types of Git branches.
-In the Git flow workflow, there are five different branch types:
+En el flujo de trabajo de Git flow, hay cinco tipos diferentes de ramas:
 
-- Main: contains production-ready code that can be released.
-- Develop: contains pre-production code with newly developed features that are in the process of being tested.
-- Feature: it is used when adding new features to your code.
-- Release: used when preparing new production releases
-- Hotfix: used to quickly address necessary changes in your main branch.
+- Main: contiene código listo para producción que puede ser lanzado.
+- Develop: contiene código preproducción con nuevas características desarrolladas que están en proceso de ser probadas.
+- Feature: se utiliza al agregar nuevas características a tu código.
+- Release: se utiliza al preparar nuevas versiones de producción.
+- Hotfix: se utiliza para abordar rápidamente cambios necesarios en tu rama principal.
   ![Git flow](https://www.gitkraken.com/wp-content/uploads/2021/03/git-flow-4.svg)
   [Source](https://www.gitkraken.com/learn/git/git-flow)
 
-### **Steps for basic Git-flow**:
+### **Pasos para Git-flow básico**:
 
-1.  **Main** branch is only for client not for develop.
-2.  Create a **"develop"** branch.
-3.  New feature branch -> branch [feature-name].
-4.  When the feature is finished, **merge with develop**.
-5.  All features are ready, **merge with main**, add a tag/release.
+1.  **Main** branch será la rama para el cliente no para desarrollo.
+2.  Crear una branch de  **"desarrollo"**.
+3.  Crear una branch por cada nueva característica. New feature branch -> branch [feature-name].
+4.  Una vez finalizada la características hacer merge con la branch de desarrollo.
+5.  Cuando todas las características estén listas, haremos merge con la rama main añadiendo una nueva tag/release.
 
 En resumen, podríamos decir que Git es una herramienta esencial para cualquier desarrollador de software que desee llevar un control de versiones y colaborar de manera efectiva en proyectos de software.
